@@ -10,7 +10,7 @@ do
   echo "$timestamp - neutrinos: $neutrinos" > "$filename"
 done
 
-cat *.txt > results.txt
+cat simulaciones/ *.txt > results.txt
 
 end=$(date +%s)
 runtime=$((end - start))
