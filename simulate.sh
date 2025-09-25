@@ -7,7 +7,7 @@ do
   filename=$(printf "%04d.txt" $i)
   timestamp=$(date +"%Y-%m-%d %H:%M:%S")
   neutrinos=$((RANDOM % 11))
-  echo "$timestamp - neutrinos: $neutrinos" > "$filename"
+  echo "$timestamp - neutrinos: $neutrinos" > "simulaciones/$filename"
 done
 
 cat simulaciones/ *.txt > results.txt
